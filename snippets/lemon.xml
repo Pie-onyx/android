@@ -30,4 +30,7 @@
   <project path="system/core" name="system_core" groups="pdk" remote="lemon" />
   <project path="vendor/lemon" name="vendor_lemon" remote="lemon" />
   <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" remote="lemon" revision="lineage-18.1" />
+
+  <!-- AOSP -->
+  <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" revision="refs/tags/android-11.0.0_r46" />
 </manifest>
