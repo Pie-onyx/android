@@ -6,4 +6,7 @@
   <remote  name="lemon"
            fetch="https://github.com/Pie-onyx"
            revision="refs/heads/aosp-12.0" />
+
+  <!-- HALs -->
+  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" remote="lemon" revision="lineage-18.1" />
 </manifest>
