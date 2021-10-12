@@ -27,6 +27,7 @@
   <project path="frameworks/native" name="frameworks_native" remote="lemon" />
   <project path="hardware/lineage/interfaces" name="hardware_lineage_interfaces" groups="pdk" remote="lemon" />
   <project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="lemon" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk" remote="lemon" />
   <project path="system/core" name="system_core" groups="pdk" remote="lemon" />
   <project path="vendor/lemon" name="vendor_lemon" remote="lemon" />
   <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" remote="lemon" revision="lineage-18.1" />
