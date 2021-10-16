@@ -23,6 +23,7 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+  <project path="external/tinycompress" name="external_tinycompress" remote="lemon" revision="sc" />
   <project path="frameworks/base" name="frameworks_base" remote="lemon" />
   <project path="frameworks/native" name="frameworks_native" remote="lemon" />
   <project path="hardware/lineage/interfaces" name="hardware_lineage_interfaces" groups="pdk" remote="lemon" />
@@ -30,7 +31,34 @@
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk" remote="lemon" />
   <project path="system/core" name="system_core" groups="pdk" remote="lemon" />
   <project path="vendor/lemon" name="vendor_lemon" remote="lemon" />
-  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" remote="lemon" revision="lineage-18.1" />
+
+  <!-- CAF repositories -->
+  <project path="hardware/qcom-caf/sdm845/audio" name="Pie-onyx/hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="aosp-12.0_caf-sdm845" remote="github" />
+  <project path="hardware/qcom-caf/sdm845/display" name="Pie-onyx/hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="aosp-12.0_caf-sdm845" remote="github" />
+  <project path="hardware/qcom-caf/sdm845/media" name="Pie-onyx/hardware_qcom_media" groups="qcom,pdk-qcom" revision="aosp-12.0_caf-sdm845" remote="github" />
+  <project path="hardware/qcom-caf/sm8250/audio" name="Pie-onyx/hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="aosp-12.0_caf-sm8250" remote="github" />
+  <project path="hardware/qcom-caf/sm8250/display" name="Pie-onyx/hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="aosp-12.0_caf-sm8250" remote="github" />
+  <project path="hardware/qcom-caf/sm8250/media" name="Pie-onyx/hardware_qcom_media" groups="qcom,pdk-qcom" revision="aosp-12.0_caf-sm8250" remote="github" />
+  <project path="hardware/qcom-caf/wlan" name="Pie-onyx/hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" revision="aosp-12.0_caf" remote="github" />
+  <project path="vendor/codeaurora/telephony" name="Pie-onyx/vendor_codeaurora_telephony" revision="sc" remote="github" />
+  <project path="vendor/nxp/opensource/interfaces/nfc" name="Pie-onyx/vendor_nxp_interfaces_opensource_nfc" revision="sc" remote="github" />
+  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="Pie-onyx/vendor_nxp_opensource_external_libnfc-nci" revision="sc" remote="github" />
+  <project path="vendor/nxp/opensource/commonsys/frameworks" name="Pie-onyx/vendor_nxp_opensource_frameworks" revision="sc" remote="github" />
+  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="Pie-onyx/vendor_nxp_opensource_packages_apps_Nfc" revision="sc" remote="github" />
+  <project path="vendor/qcom/opensource/audio" name="Pie-onyx/vendor_qcom_opensource_audio" groups="qcom,pdk-qcom" revision="sc" remote="github" />
+  <!-- <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="Pie-onyx/vendor_qcom_opensource_bluetooth-commonsys-intf" groups="qcom,pdk-qcom" revision="sc" remote="github" /> -->
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="Pie-onyx/vendor_qcom_opensource_display-commonsys-intf" groups="qcom,pdk-qcom" revision="sc-old" remote="github" />
+  <!-- <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="Pie-onyx/vendor_qcom_opensource_bluetooth_ext" groups="qcom,pdk-qcom" revision="sc" remote="github" /> -->
+  <!-- <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="Pie-onyx/vendor_qcom_opensource_packages_apps_Bluetooth" groups="qcom,pdk-qcom" revision="sc" remote="github" /> -->
+  <!-- <project path="vendor/qcom/opensource/commonsys/system/bt" name="Pie-onyx/vendor_qcom_opensource_system_bt" groups="qcom,pdk-qcom" revision="sc" remote="github" /> -->
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="Pie-onyx/vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,pdk-qcom" revision="sc" remote="github" />
+  <project path="vendor/qcom/opensource/dataservices" name="Pie-onyx/vendor_qcom_opensource_dataservices" groups="qcom,pdk-qcom" revision="sc" remote="github" />
+  <project path="vendor/qcom/opensource/interfaces" name="Pie-onyx/vendor_qcom_opensource_interfaces" groups="qcom,pdk-qcom" revision="sc" remote="github" />
+  <project path="vendor/qcom/opensource/power" name="Pie-onyx/vendor_qcom_opensource_power" groups="qcom,pdk-qcom" revision="sc" remote="github" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="Pie-onyx/vendor_qcom_opensource_thermal-engine" groups="qcom,pdk-qcom" revision="sc" remote="github" />
+  <project path="vendor/qcom/opensource/usb" name="Pie-onyx/vendor_qcom_opensource_usb" groups="qcom,pdk-qcom" revision="sc" remote="github" />
+  <project path="vendor/qcom/opensource/vibrator" name="Pie-onyx/vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" revision="sc" remote="github" />
+  <project path="vendor/qcom/opensource/wfd-commonsys" name="Pie-onyx/vendor_qcom_opensource_wfd-commonsys" groups="qcom,pdk" revision="sc" remote="github" />
 
   <!-- AOSP -->
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" revision="refs/tags/android-11.0.0_r46" />
